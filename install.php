@@ -25,7 +25,7 @@
 
 			try {
 				// Trying to connect to the database
-				$db = new Database(['driver' => 'mysql','hostname' => 'ec2-18-211-48-247.compute-1.amazonaws.com:5432','username' => $db_user,'password' => $db_password,'database' => $db_name]);
+				$db = new Database(['driver' => 'pgsql','hostname' => 'ec2-18-211-48-247.compute-1.amazonaws.com:5432','username' => $db_user,'password' => $db_password,'database' => $db_name]);
 
 				// Setting up all required tables
 				$db -> execute ("
